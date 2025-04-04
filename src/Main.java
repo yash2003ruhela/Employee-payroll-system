@@ -23,12 +23,12 @@ abstract class Employee {
 
     @Override
     public String toString() {
-        return "Employee [name=" + name + ", id=" + id + ", salary=" + calculateSalary() + "]";
+        return ", salary=" + "]" + "Employee [name=" + name + ", id=" + id + calculateSalary();
     }
 }
 
 class FullTimeEmployee extends Employee {
-    private double monthlySalary;
+    private final double monthlySalary;
 
     public FullTimeEmployee(String name, int id, double monthlySalary) {
         super(name, id);
